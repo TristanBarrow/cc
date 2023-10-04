@@ -4,7 +4,7 @@ local response = http.get(url)
 
 local content = response.readAll()
 
-f = fs.open("./install.lua", "w")
+f = fs.open("/install.lua", "w")
 
 f.write(content)
 
